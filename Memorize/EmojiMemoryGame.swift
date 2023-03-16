@@ -19,7 +19,7 @@ class EmojiMemoryGame: ObservableObject {
     
     // Type-function
     private static func createGame() -> MemoryGame<String> {
-        MemoryGame(numberOfCardsPairs: 4) { index in
+        MemoryGame(numberOfCardsPairs: 10) { index in
             images[index]
        }
     }
@@ -33,8 +33,6 @@ class EmojiMemoryGame: ObservableObject {
     var cards: Array<Card> {
         model.cards;
     }
-    
-
     
     // MARK - Intents
     func choose(_ card: Card){
